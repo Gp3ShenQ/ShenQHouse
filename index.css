@@ -1767,7 +1767,7 @@
 }
 .box .greenBox .greenRight {
   position: relative;
-  background-image: url("/img/pic/green1/pic6.jpg");
+  background-image: url("./img/pic/green1/pic6.jpg");
   border-left: solid 20px #6a5e57;
   width: 70%;
   height: 100%;
