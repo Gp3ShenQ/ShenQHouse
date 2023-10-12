@@ -61,7 +61,7 @@ $(".point").on('click',function(){
     $(".point").removeClass("change")
     $('.box').fadeIn(1000)
     $(".innerPage").fadeOut(300)
-    $('html,body').animate({scrollTop:0}, 100);
+    $('html,body').animate({scrollTop:0}, 100)
     $('footer').fadeIn(1000)
   }else{
   $(".point").addClass("change")
