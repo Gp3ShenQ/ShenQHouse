@@ -45,16 +45,6 @@ $(window).on('scroll',()=>{
   },100)
 })
 
-//-----往上下須要動作
-if(direction){
-
-}
-
-// if($("body").hasClass("innerPage")){
-//   $(".navbar").addClass("bgcbrown")
-// }else{
-//   $(".navbar").removeClass("bgcbrown")
-// }
 
 $(".point").on('click',function(){
   if($(".point").hasClass("change")){
@@ -158,17 +148,7 @@ function opacityControl(){
 //-----卷軸位置1800顯現
 $(window).on('scroll',function(){
   detectDisplay()
-  // opacityControl()
 })
-// $(window).on('scroll',function(){
-//   if($(window).scrollTop() >= 1800){
-//     $('mian').addClass('')
-
-//   }else if($(window).scrollTop() < 1800){
-//     $('mian').removeClass('')
-
-//   }
-// })
 //-----卷軸位置1800顯現
 
 ///-----點擊後背景圖展開
@@ -217,4 +197,13 @@ function blockEvent(){
 }
 ///-----點擊後背景圖展開
 
-
+/// -------  錨點定位
+const anchor = (el) => {
+  $(el).on('click',function (){
+    const target = $(this).attr('anchor-target');
+    const height = $(target).offset().top;
+    window.scrollTo({top: height, behavior: 'smooth'})
+  })
+}
+anchor('.word')
+/// -------  錨點定位

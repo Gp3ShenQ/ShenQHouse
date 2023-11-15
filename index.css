@@ -1014,21 +1014,8 @@
     font-size: 16px;
   }
 }
-.box .bottomBox .leftBottom .other {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
-.box .bottomBox .leftBottom .other .point-bottom {
-  width: 8px;
-  height: 8px;
-  margin: 1px;
-  background-color: white;
-  border-radius: 100%;
+.box .bottomBox .leftBottom .colorBtt .leftBox p:hover {
+  opacity: 0.5;
 }
 .box .bottomBox .rightBottom {
   position: relative;
@@ -1784,49 +1771,49 @@
   }
 }
 
-.bottomBox {
+.bottom-area {
   position: relative;
   width: 100%;
   height: 55vh;
 }
 @media screen and (max-width: 768px) {
-  .bottomBox {
+  .bottom-area {
     height: 100%;
   }
 }
-.bottomBox img {
+.bottom-area img {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-.bottomBox .bocImg {
+.bottom-area .bocImg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 @media screen and (max-width: 768px) {
-  .bottomBox .bocImg {
+  .bottom-area .bocImg {
     display: block;
   }
 }
-.bottomBox .company {
+.bottom-area .company {
   position: relative;
   width: 25%;
   height: 100%;
   margin-left: 60px;
 }
 @media screen and (max-width: 1024px) {
-  .bottomBox .company {
+  .bottom-area .company {
     margin-left: 10px;
   }
 }
 @media screen and (max-width: 768px) {
-  .bottomBox .company {
+  .bottom-area .company {
     width: 100%;
     margin-left: 50px;
   }
 }
-.bottomBox .company .comTop {
+.bottom-area .company .comTop {
   position: relative;
   width: 100%;
   height: 20%;
@@ -1840,19 +1827,19 @@
   background-image: url("./img/wordstyle/pic4.jpg");
 }
 @media screen and (max-width: 1024px) {
-  .bottomBox .company .comTop {
+  .bottom-area .company .comTop {
     font-size: 25px;
   }
 }
-.bottomBox .company .innerCom {
+.bottom-area .company .innerCom {
   margin: 20px 0 0 10px;
 }
-.bottomBox .company .innerCom p {
+.bottom-area .company .innerCom p {
   color: white;
   font-size: 16px;
   line-height: 30px;
 }
-.bottomBox .company .innerCom .icon-mobile, .bottomBox .company .innerCom .icon-phone-hang-up, .bottomBox .company .innerCom .icon-mail2, .bottomBox .company .innerCom .icon-office {
+.bottom-area .company .innerCom .icon-mobile, .bottom-area .company .innerCom .icon-phone-hang-up, .bottom-area .company .innerCom .icon-mail2, .bottom-area .company .innerCom .icon-office {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1861,27 +1848,27 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.bottomBox .company .innerCom .icon-mobile p, .bottomBox .company .innerCom .icon-phone-hang-up p, .bottomBox .company .innerCom .icon-mail2 p, .bottomBox .company .innerCom .icon-office p {
+.bottom-area .company .innerCom .icon-mobile p, .bottom-area .company .innerCom .icon-phone-hang-up p, .bottom-area .company .innerCom .icon-mail2 p, .bottom-area .company .innerCom .icon-office p {
   margin-left: 10px;
 }
-.bottomBox .media {
+.bottom-area .media {
   position: relative;
   width: 20%;
   height: 100%;
   margin-left: 60px;
 }
 @media screen and (max-width: 1024px) {
-  .bottomBox .media {
+  .bottom-area .media {
     margin-left: 10px;
   }
 }
 @media screen and (max-width: 768px) {
-  .bottomBox .media {
+  .bottom-area .media {
     width: 100%;
     margin-left: 50px;
   }
 }
-.bottomBox .media .meTop {
+.bottom-area .media .meTop {
   position: relative;
   width: 100%;
   height: 20%;
@@ -1895,11 +1882,11 @@
   background-image: url("./img/wordstyle/pic4.jpg");
 }
 @media screen and (max-width: 1024px) {
-  .bottomBox .media .meTop {
+  .bottom-area .media .meTop {
     font-size: 25px;
   }
 }
-.bottomBox .media .innerMe {
+.bottom-area .media .innerMe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1912,37 +1899,37 @@
   letter-spacing: 20px;
 }
 @media screen and (max-width: 1024px) {
-  .bottomBox .media .innerMe {
+  .bottom-area .media .innerMe {
     font-size: 25px;
   }
 }
-.bottomBox .media .innerMe .icon {
+.bottom-area .media .innerMe .icon {
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   line-height: 60px;
 }
-.bottomBox .media .innerMe .icon:hover {
+.bottom-area .media .innerMe .icon:hover {
   color: #A59B92;
 }
-.bottomBox .fb {
+.bottom-area .fb {
   position: relative;
   width: 40%;
   height: 100%;
   margin-left: 60px;
 }
 @media screen and (max-width: 1024px) {
-  .bottomBox .fb {
+  .bottom-area .fb {
     margin-left: 10px;
   }
 }
 @media screen and (max-width: 768px) {
-  .bottomBox .fb {
+  .bottom-area .fb {
     width: 100%;
     margin-left: 0;
   }
 }
-.bottomBox .fb .linTop {
+.bottom-area .fb .linTop {
   position: relative;
   width: 100%;
   height: 20%;
@@ -1956,19 +1943,19 @@
   background-image: url("./img/wordstyle/pic4.jpg");
 }
 @media screen and (max-width: 1024px) {
-  .bottomBox .fb .linTop {
+  .bottom-area .fb .linTop {
     font-size: 25px;
   }
 }
 @media screen and (max-width: 768px) {
-  .bottomBox .fb .linTop {
+  .bottom-area .fb .linTop {
     margin-left: 50px;
   }
 }
-.bottomBox .fb .fb-box {
+.bottom-area .fb .fb-box {
   position: relative;
 }
-.bottomBox .fb .fb-box .fb {
+.bottom-area .fb .fb-box .fb {
   position: relative;
   background-image: url("./img/Innerpage/fbimg.jpg");
   width: 100%;
@@ -1976,10 +1963,10 @@
   width: 375px;
   height: 147px;
 }
-.bottomBox .fb .fb-box .fb * {
+.bottom-area .fb .fb-box .fb * {
   font-family: "微軟正黑體";
 }
-.bottomBox .fb .fb-box .fb .fb-shadow {
+.bottom-area .fb .fb-box .fb .fb-shadow {
   position: absolute;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#f4f4f4), to(#000000));
   background-image: linear-gradient(to top, #f4f4f4, #000000);
@@ -1987,14 +1974,14 @@
   width: 375px;
   height: 147px;
 }
-.bottomBox .fb .fb-box .fb .fb-top {
+.bottom-area .fb .fb-box .fb .fb-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 50%;
 }
-.bottomBox .fb .fb-box .fb .fb-top .fbimg {
+.bottom-area .fb .fb-box .fb .fb-top .fbimg {
   position: relative;
   left: 2%;
   top: 8%;
@@ -2002,14 +1989,14 @@
   width: 53px;
   height: 53px;
 }
-.bottomBox .fb .fb-box .fb .fb-top .fbword {
+.bottom-area .fb .fb-box .fb .fb-top .fbword {
   font-weight: 100;
   position: relative;
   left: 2%;
   top: 8%;
   color: white;
 }
-.bottomBox .fb .fb-box .fb .fb-top .fbword .fbtitle {
+.bottom-area .fb .fb-box .fb .fb-top .fbword .fbtitle {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -2017,10 +2004,10 @@
   font-weight: 700;
   display: inline-block;
 }
-.bottomBox .fb .fb-box .fb .fb-top .fbword .fbtitle:hover {
+.bottom-area .fb .fb-box .fb .fb-top .fbword .fbtitle:hover {
   text-decoration: underline;
 }
-.bottomBox .fb .fb-box .fb .fb-bottom {
+.bottom-area .fb .fb-box .fb .fb-bottom {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2029,7 +2016,7 @@
   width: 100%;
   height: 25%;
 }
-.bottomBox .fb .fb-box .fb .fb-bottom .fb-bbox {
+.bottom-area .fb .fb-box .fb .fb-bottom .fb-bbox {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2043,15 +2030,15 @@
   width: 115px;
   height: 25px;
 }
-.bottomBox .fb .fb-box .fb .fb-bottom .fb-bbox .icon-facebook21 {
+.bottom-area .fb .fb-box .fb .fb-bottom .fb-bbox .icon-facebook21 {
   color: #3019c6;
   padding-left: 5px;
 }
-.bottomBox .fb .fb-box .fb .fb-bottom .fb-bbox .fb-flword {
+.bottom-area .fb .fb-box .fb .fb-bottom .fb-bbox .fb-flword {
   padding-left: 5px;
   font-size: 14px;
 }
-.bottomBox .fb .fb-box .fb .fb-bottom .fb-sbox {
+.bottom-area .fb .fb-box .fb .fb-bottom .fb-sbox {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2065,21 +2052,21 @@
   width: 60px;
   height: 25px;
 }
-.bottomBox .fb .fb-box .fb .fb-bottom .fb-sbox .sicon {
+.bottom-area .fb .fb-box .fb .fb-bottom .fb-sbox .sicon {
   color: #787373;
   padding-left: 5px;
 }
-.bottomBox .fb .fb-box .fb .fb-bottom .fb-sbox .fb-sword {
+.bottom-area .fb .fb-box .fb .fb-bottom .fb-sbox .fb-sword {
   padding-left: 5px;
   font-size: 14px;
 }
-.bottomBox .dising {
+.bottom-area .dising {
   position: absolute;
   bottom: 0;
   width: 100%;
   background-color: black;
 }
-.bottomBox .dising p {
+.bottom-area .dising p {
   color: white;
   text-align: center;
   font-size: 10px;
