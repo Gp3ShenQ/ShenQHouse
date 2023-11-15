@@ -195,6 +195,7 @@
 
         //---- 關於ShenQ
       .aboutBox
+        position: relative
         display: block
         margin-top: 50px
         width: 100%
@@ -205,7 +206,7 @@
           height: 100%
           .about 
             position: absolute
-            width: 60%
+            width: 80%
             top: 50%
             left: 50%
             transform: translate(-50%,-50%)
@@ -214,33 +215,27 @@
             color: white
         // -------地圖
         .aboutMap
-          position: relative
-          margin: 50px 0 0 35%
+          display: flex
+          width: 100%
+          margin-top: 50px
           @media screen and (max-width: 1200px)
-              margin: 70px 0 0 20%
+              // margin: 70px 0 0 20%
           @media screen and (max-width: 375px)
-              margin: 70px 0 0 10%
+              // margin: 70px 0 0 10%
           iframe
+            margin: 0 auto
             width: 300px
             height: 200px
 
             //------------FB版
         .fb-box
+          display: flex
+          width: 100%
           .fb
+            margin: 50px auto
             position: relative
             background-image: url('./img/Innerpage/fbimg.jpg')
-            width: 100%
-            margin: 100px 0 0 30%
             +wh(375px, 147px)
-            @media screen and (max-width: 1366px)
-              margin: 70px 0 0 30%
-            @media screen and (max-width: 1200px)
-              margin: 50px 0 0 20%
-            @media screen and (max-width: 576px)
-              margin: 50px 0 0 15%
-            @media screen and (max-width: 375px)
-              margin: 50px 0 0 0
-
             *
               font-family: "微軟正黑體"
             .fb-shadow
@@ -248,18 +243,15 @@
               background-image: linear-gradient(to top, #f4f4f4, #000000)
               opacity: 0.5
               +wh(375px, 147px)
-
             .fb-top
               display: flex
               +wh(100% , 50%)
-
               .fbimg
                 position: relative
                 left: 2%
                 top: 8%
                 background-image: url('./img/Mark/50Mark.png')
                 +wh(53px , 53px)
-
               .fbword
                 font-weight: 100
                 position: relative
@@ -279,7 +271,6 @@
               display: flex
               bottom: 0
               +wh(100% , 25%)
-
               .fb-bbox
                 position: relative
                 display: flex
@@ -288,14 +279,12 @@
                 background-color: #ffffff
                 cursor: pointer
                 +wh(115px , 25px)
-
                 .icon-facebook21
                   color: #3019c6
                   padding-left: 5px
                 .fb-flword
                   padding-left: 5px
                   font-size: 14px
-
               .fb-sbox
                 position: relative
                 display: flex
@@ -304,7 +293,6 @@
                 background-color: #ffffff
                 cursor: pointer
                 +wh(60px , 25px)
-
                 .sicon
                   color: #787373
                   padding-left: 5px
@@ -321,8 +309,10 @@
         .innerPj1
           position: relative
           display: flex
-          margin: 50px 0 0 60px
+          align-items: center
+          justify-content: center
           cursor: pointer
+          height: 200px
           &:hover
             .pjImg1
               img
@@ -353,8 +343,10 @@
         .innerPj2
           position: relative
           display: flex
-          margin: 40px 0 0 60px
           cursor: pointer
+          align-items: center
+          justify-content: center
+          height: 200px
           &:hover
             .pjImg2
               img
@@ -362,10 +354,6 @@
                 transform: scale(1.2)
             .pjWord2
               color: #ecdede
-          @media screen and (max-width: 1024px)
-            margin: 40px 0 0 260px
-          @media screen and (max-width: 768px)
-            margin: 40px 0 0 70px
           @media screen and (max-width: 576px)
             position: absolute
             display: block
@@ -391,8 +379,10 @@
         .innerPj3
           position: relative
           display: flex
-          margin: 40px 0 0 60px
+          align-items: center
+          justify-content: center
           cursor: pointer
+          height: 200px
           &:hover
             .pjImg3
               img
@@ -435,7 +425,7 @@
           height: 180px
           padding: 20px
         .inBox
-          margin: 20px 0 0 50px
+          margin: 20px 0 0 0
           .firBox
             display: flex
             justify-content: space-around
@@ -443,12 +433,13 @@
               position: absolute
               font-size: 30px
               color: #C9BAA7
-              left: 30%
-              transform: translate(-50% , 50%)
+              top: 100%
+              left: 50%
+              transform: translate(-50% )
             .icon-circle-right
               position: absolute
               font-size: 30px
-              left: 50% 
+              left: 47% 
               top: 13%
               color: #C9BAA7
           .senBox
@@ -459,12 +450,12 @@
               position: absolute
               font-size: 30px
               color: #C9BAA7
-              left: 30%
+              left: 45%
               transform: translate(-50% , 100%)
             .icon-circle-left
               position: absolute
               font-size: 30px
-              left: 50% 
+              left: 47% 
               top: 48%
               color: #C9BAA7
           .therBox
@@ -474,7 +465,7 @@
             .icon-circle-right
               position: absolute
               font-size: 30px
-              left: 50% 
+              left: 47% 
               top: 83%
               color: #C9BAA7
       // -------服務流程
@@ -589,7 +580,8 @@
 
   .indexBox
     display: flex
-    height: 960px
+    // width: 100%
+    height: 100vh
     .leftArea
       position: relative
       background-image: url("./img/bgimg1.jpg")
@@ -601,18 +593,12 @@
       .worBox
         position: relative
         display: inline-block
-        margin: 210px 0 0 120px
-        width: 70%
-        @media screen and (max-width: 1024px)
-          width: 90%
-          margin: 210px 0 0 0px
+        margin-top: 150px 
+        padding: 50px
+        width: 100%
         @media screen and (max-width: 768px)
-          margin: 210px 0 0 90px
-          width: 80%
-        @media screen and (max-width: 576px)
-          margin: 100px 0 0 90px
-        @media screen and (max-width: 375px)
-          margin: 100px 0 0 50px
+          padding: 20px
+          width: 100%
         .mark1
           img
             width: 120px
@@ -703,7 +689,7 @@
         display: flex
         align-items: center
         cursor: pointer
-        .point
+        .point-bottom
           width: 8px
           height: 8px
           margin: 1px
@@ -807,30 +793,42 @@
       @media screen and (max-width: 1024px)
         width: 100%
       .topImg
-        width: 100%
+        width: 100% 
         height: 100%
-        .Img1
-          position: absolute
-          right: 5%
-          top: 40%
-          box-shadow: 15px 14px #E1E6E0
-          @media screen and (max-width: 1024px)
-            top: 45%  
-          @media screen and (max-width: 576px)
-            box-shadow: none
-            left: 30px
-
-
-        .Img2
-          position: absolute
-          top: 5% 
-          left: 5%
-          box-shadow: -20px -16px #E1E6E0
-          @media screen and (max-width: 576px)
-            box-shadow: none
-            left: 30px
-
-
+        img
+          width: 100%
+          height: 100%
+          &:nth-child(1)
+            position: absolute
+            top: 50px
+            width: 350px
+            height: 300px
+            left: 10%
+            box-shadow: -10px -10px 20px 1px #fff
+          &:nth-child(2)
+            position: absolute
+            bottom: 250px
+            width: 350px
+            height: 300px
+            box-shadow: 10px 10px 20px 1px #fff
+            right: 10%
+        @media screen and (max-width: 1024px)
+          img
+            &:nth-child(1)
+              left: 10%
+            &:nth-child(2)
+              bottom: 120px
+              right: 10%
+        @media screen and (max-width: 576px)
+          img
+            &:nth-child(1)
+              left: 50%
+              transform: translateX(-50%)
+            &:nth-child(2)
+              left: 50%
+              transform: translateX(-50%)
+              bottom: 120px
+              right: 10%
     .wArea
       position: absolute
       display: flex
@@ -856,32 +854,30 @@
         @media screen and (max-width: 1024px)
           display: none
       .inWord
-        width: 200%
+        position: relative
+        width: 100%
+        text-align: center
         @media screen and (max-width: 1024px)
           position: relative
-          margin-top: 100px
-          margin-left: 500px
-      .topW
-        position: relative
-        text-align: center
+          left: 0
         p
           font-size: 40px
-          line-height: 100px
-          font-weight: 500
+          line-height: 50px
           font-family: 'Jost', sans-serif
         @media screen and (max-width: 1024px)
           position: absolute
-          right: 0
-          width: 400px 
+          top: 80px
+          left: 50%
+          transform: traslateX(-50%)
           margin-top: 10px
           p
-            font-size: 20px
+            font-size: 24px
             line-height: 20px
             color: white
-        @media screen and (max-width: 768px)
-          right: 50px
-        @media screen and (max-width: 576px)
-          right: 50px
+        @media screen and (max-width: 1024px)
+          left: 0
+        // @media screen and (max-width: 576px)
+        //   right: 20px
       .innerW
         position: relative 
         text-align: center
@@ -925,14 +921,18 @@
         margin-top: -70% 
       .wor
         position: absolute
-        top: 60%
+        top: 40%
         left: 50%
         transform: translateX(-50%)
         font-size: 40px
         font-weight: 900
         color: white
+        writing-mode: vertical-lr
+        letter-spacing: 20px
         @media screen and (max-width: 768px)
-          top: 30%
+          top: 50%
+        @media screen and (max-width: 576px)
+          top: 40%
     .back
       display: none
       position: fixed
@@ -1148,8 +1148,10 @@
         font-weight: 700
         margin: 50px 0 0 50px
         border-bottom: solid 10px #6a5e57
-        @media screen and (max-width: 1024px)
-          margin: 50px 0 0 0
+        @media screen and (max-width: 768px)
+          writing-mode: vertical-lr
+          margin: 50px auto
+          border-bottom: none
         
       .greenPic1
         position: absolute
@@ -1192,11 +1194,13 @@
 .bottomBox 
   position: relative
   width: 100%
-  height: 80vh
+  height: 55vh
+  @media screen and (max-width: 768px)
+    height:100%
   img
     position: absolute
     width: 100%
-    height: 130%
+    height: 100%
   .bocImg 
     display: flex
     @media screen and (max-width: 768px)
@@ -1210,7 +1214,7 @@
       margin-left: 10px
     @media screen and (max-width: 768px)
       width: 100%
-      margin-left: 0
+      margin-left: 50px
     .comTop
       position: relative
       width: 100%
@@ -1246,7 +1250,7 @@
       margin-left: 10px
     @media screen and (max-width: 768px)
       width: 100%
-      margin-left: 0
+      margin-left: 50px
     .meTop
       position: relative
       width: 100%
@@ -1299,6 +1303,8 @@
       background-image: url("./img/wordstyle/pic4.jpg")
       @media screen and (max-width: 1024px)
         font-size: 25px
+      @media screen and (max-width: 768px)
+        margin-left: 50px
         //------------FB版
     .fb-box
       position: relative
@@ -1307,7 +1313,7 @@
         position: relative
         background-image: url('./img/Innerpage/fbimg.jpg')
         width: 100%
-        margin: 20px 0 0 0
+        margin: 20px auto 0
         +wh(375px, 147px)
         *
           font-family: "微軟正黑體"
@@ -1382,6 +1388,9 @@
                  //------------FB版
 
   .dising
+    position: absolute
+    bottom: 0
+    width: 100%
     background-color: black
     p
       color: white
